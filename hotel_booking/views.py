@@ -10,3 +10,5 @@ def api_root(request, format=None):
         'bookings': request.build_absolute_uri('api/bookings/'),
         'dashboard': request.build_absolute_uri('api/dashboard/'),
     })
+
+#python 
