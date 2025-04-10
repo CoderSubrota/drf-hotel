@@ -167,3 +167,15 @@ SIMPLE_JWT = {
     'SIGNING_KEY': SECRET_KEY,
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://your-app-name.onrender.com",
+]
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://your-app-name.onrender.com",
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
