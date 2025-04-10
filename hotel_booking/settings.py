@@ -168,10 +168,12 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
+
 CSRF_TRUSTED_ORIGINS = [
-    "https://drf-hotel.onrender.com/"
+    "https://drf-hotel.onrender.com"
 ]
 
 
 CORS_ALLOW_ALL_ORIGINS = True
+
 
