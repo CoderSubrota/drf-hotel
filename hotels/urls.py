@@ -30,6 +30,4 @@ urlpatterns = [
     path('', include(hotel_router.urls)),
     path('<int:hotel_id>/reviews/', HotelReviewCreateView.as_view(), name='hotel-review'),
     path('<int:hotel_id>/images/', HotelImageUploadView.as_view(), name='hotel-image-upload'),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
