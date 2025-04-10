@@ -169,13 +169,9 @@ SIMPLE_JWT = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://your-app-name.onrender.com",
+    "https://drf-hotel.onrender.com/"
 ]
 
-
-CORS_ALLOWED_ORIGINS = [
-    "https://your-app-name.onrender.com",
-]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
