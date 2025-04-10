@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from pathlib import Path
 
@@ -87,8 +91,10 @@ DEFAULT_FROM_EMAIL = 'noreply@hotelbooking.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'itsectorcommunication@gmail.com'
-EMAIL_HOST_PASSWORD = 'qomf jpfh yrqo itiz'
+EMAIL_HOST_USER =   os.getenv('EMAIL_HOST_USER')
+# 'itsectorcommunication@gmail.com'
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+# 'qomf jpfh yrqo itiz'
 EMAIL_USE_TLS = True
 
 
@@ -175,5 +181,3 @@ CSRF_TRUSTED_ORIGINS = [
 
 
 CORS_ALLOW_ALL_ORIGINS = True
-
-
